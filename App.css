@@ -1,0 +1,110 @@
+section.main-block {
+   position: absolute;
+   width: 100%;
+   min-width: 1280px;
+   height: 500px;
+   display: flex;
+   justify-content: center;
+   z-index: 0;
+}
+
+.defaultBlock {
+   display: flex;
+   flex-direction: column;
+   flex-basis: 25%;
+   padding: 1% 1% 0 1%;
+   max-width: 310px;
+   min-width: 265px;
+   margin-top: 50px;
+   height: 100%;
+   border: 1px solid #DFDFDF;
+}
+
+.defaultBlock__title {
+   width: 100%;
+   text-align: center;
+   font-size: 30px;
+   padding-bottom: 10px;
+   height: 10%;
+   display: flex;
+   justify-content: center;
+}
+
+.defaultBlock__button {
+   width: 30px;
+   height: 30px;
+   margin-left: 15px;
+   margin-top: 5px;
+}
+
+.defaultBlock__items::-webkit-scrollbar {
+   width: 0;
+}
+
+.defaultBlock__items {
+   margin: 0;
+   padding: 0;
+   height: 90%;
+   overflow-y: scroll;
+   border-top: 1px solid #DFDFDF;
+   border-bottom: 1px solid #DFDFDF;
+}
+
+/* buttons */
+.schedule,
+.add-btn,
+.edit-item,
+.done-item,
+.not-done-item,
+.delete-item,
+.not-schedule {
+   width: 20px;
+   height: 20px;
+   background-size: 100%;
+   background-repeat: no-repeat;
+}
+
+.not-schedule {
+   width: 24px;
+   height: 24px;
+}
+
+.add-btn {
+   width: 28px;
+   height: 28px;
+}
+
+.add-btn:hover,
+.edit-item:hover,
+.done-item:hover,
+.delete-item:hover {
+   cursor: pointer;
+   box-shadow: 0 0 10px #eee;
+}
+
+.add-btn {
+   background-image: url(./img/add.png);
+}
+.edit-item {
+   background-image: url(./img/edit.png);
+}
+.done-item {
+   background-image: url(./img/done.png);
+}
+.not-done-item {
+   background-image: url(./img/not-done.png);
+}
+.delete-item {
+   background-image: url(./img/delete.png);
+}
+.schedule {
+   background-image: url(./img/arrow.png);
+}
+.not-schedule {
+   background-image: url(./img/arrow.png);
+   -webkit-transform: rotate(180deg);
+   -moz-transform: rotate(180deg);
+   -ms-transform: rotate(180deg);
+   -o-transform: rotate(180deg);
+   transform: rotate(180deg);
+}
